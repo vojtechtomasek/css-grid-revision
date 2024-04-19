@@ -38,7 +38,7 @@ h1 {
 
 .grid-item {
     background-color: var(--yellow-grid-item);
-    padding: 40px;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
 }
