@@ -1,0 +1,64 @@
+:root {
+    --main-bg-color: #ccc;
+    --yellow-grid-item: #ffd653;
+    --brown-grid-item: #8b740c;
+    --dark-blue-grid-item: #005780;
+    --purple-grid-item: #800080;
+    --light-blue-grid-item: #76afb9;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.hint{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: var(--yellow-grid-item);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container .grid-item:nth-child(1) {
+    grid-column: 1 / 3;
+    background-color: var(--brown-grid-item);
+}
+
+.grid-container .grid-item:nth-child(4) {
+    grid-column: 1/4;
+    background-color: var(--dark-blue-grid-item);
+}
+
+.grid-container .grid-item:nth-child(6) {
+    grid-column: 1/5;
+    background-color: var(--purple-grid-item);
+}
+
+.grid-container .grid-item:nth-child(9) {
+    grid-column: 3/5;
+    background-color: var(--light-blue-grid-item);
+}
